@@ -1,0 +1,1 @@
+recursive-include ninfo_plugins_splunk_bro *.mako
