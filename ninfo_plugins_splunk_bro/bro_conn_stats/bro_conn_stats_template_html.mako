@@ -3,7 +3,6 @@
 %>
 %if events:
 <table border="1" cellpadding="1" cellspacing="0">
-<tbody>
 <thead>
 <tr><th>Day</th><th>Connections</th></tr>
 </thead>
