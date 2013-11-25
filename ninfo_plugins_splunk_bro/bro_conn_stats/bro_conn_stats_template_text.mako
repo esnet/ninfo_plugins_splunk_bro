@@ -1,7 +1,7 @@
-%if events:
-%for x in events:
-    %if int(x['count']):
-Day: ${x['_time']} Connections: ${x['count']}
+%if days:
+%for day, count in days:
+    %if count:
+Day: ${day} Connections: ${count}
     %endif
 %endfor
 %endif

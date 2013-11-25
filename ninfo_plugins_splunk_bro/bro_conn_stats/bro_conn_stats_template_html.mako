@@ -7,10 +7,10 @@
 <tr><th>Day</th><th>Connections</th></tr>
 </thead>
 <tbody>
-%for x in events:
+%for day.count in days:
 <tr>
-    <td> ${x['_time']} </td>
-    <td> ${x['count']} </td>
+    <td> ${day} </td>
+    <td> ${count} </td>
 </tr>
 %endfor
 </tbody>
