@@ -14,6 +14,7 @@ setup(name='ninfo-plugins-splunk-bro',
             'bro_user_agents = ninfo_plugins_splunk_bro.bro_user_agents.bro_user_agents_plugin',
             'bro_notice  = ninfo_plugins_splunk_bro.bro_notice.bro_notice_plugin',
             'bro_conn_stats  = ninfo_plugins_splunk_bro.bro_conn_stats.bro_conn_stats_plugin',
+            'bro_dhcp  = ninfo_plugins_splunk_bro.bro_dhcp.bro_dhcp_plugin',
         ]
     }
 )
