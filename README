@@ -1,0 +1,13 @@
+Ninfo plugins for querying bro data that is logged to splunk.
+
+Configuration:
+=============
+
+Configure the ninfo splunk helper with a global section:
+
+    [splunk]
+    host = splunk-backend.example.com
+    web = splunk-head.example.com
+    port = 8089
+    username = infosearch
+    password = password_for_info_to_use
