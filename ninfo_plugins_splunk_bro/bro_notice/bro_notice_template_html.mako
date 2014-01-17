@@ -3,7 +3,6 @@
 %>
 %if events:
 <table border="1" cellpadding="1" cellspacing="0">
-<tbody>
 <thead>
 <tr><th>time</th><th>Notice</th><th>src</th><th>dst</th><th>msg</th><th>sub</th></tr>
 </thead>
