@@ -1,7 +1,7 @@
 <%
     host = config['splunk']['web']
 %>
-%if events:
+%if times:
 <table border="1" cellpadding="1" cellspacing="0">
 <thead>
 <tr><th>time</th><th>Connections</th></tr>
