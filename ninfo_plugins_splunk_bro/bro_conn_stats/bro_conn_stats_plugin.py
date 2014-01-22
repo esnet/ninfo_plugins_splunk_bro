@@ -7,7 +7,7 @@ class bro_conn_stats(SplunkBase):
     title = "Bro connection stats"
     description = "Bro connection status from splunk"
     types  = ['ip','ip6']
-    TEMPLATE = 'daysago=7 source="*conn.log" %s | timechart span=1d count'
+    TEMPLATE = 'hoursago=4 source="*conn.log" %s | timechart span=20m count'
 
     def get_info(self, arg):
         query = self.TEMPLATE % arg
