@@ -1,7 +1,7 @@
-%if days:
-%for day, count in days:
+%if times:
+%for time, count in times:
     %if count:
-Day: ${day} Connections: ${count}
+time: ${time} Connections: ${count}
     %endif
 %endfor
 %endif

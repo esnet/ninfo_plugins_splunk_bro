@@ -12,11 +12,11 @@ class bro_conn_stats(SplunkBase):
     def get_info(self, arg):
         query = self.TEMPLATE % arg
         events = self.do_search(query)
-        days = {}
+        times = {}
         for e in events:
-            day = e['_time'].split()[0]
-            days[day] = int(e['count'])
-        days = list(sorted(days.items()))
-        return {'days': days}
+            time = e['_time'].split(".")[0]
+            times[time] = int(e['count'])
+        times = list(sorted(times.items()))
+        return {'times': times}
 
 plugin_class = bro_conn_stats

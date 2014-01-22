@@ -4,12 +4,12 @@
 %if events:
 <table border="1" cellpadding="1" cellspacing="0">
 <thead>
-<tr><th>Day</th><th>Connections</th></tr>
+<tr><th>time</th><th>Connections</th></tr>
 </thead>
 <tbody>
-%for day.count in days:
+%for time, count in times:
 <tr>
-    <td> ${day} </td>
+    <td> ${time} </td>
     <td> ${count} </td>
 </tr>
 %endfor
