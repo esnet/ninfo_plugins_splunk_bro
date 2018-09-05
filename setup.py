@@ -7,7 +7,7 @@ setup(name='ninfo-plugins-splunk-bro',
     packages = find_packages(exclude=["tests"]),
     include_package_data=True,
     install_requires=[
-        "ninfo[Splunk]>=0.3.0",
+        "ninfo>=0.3.0",
     ],
     entry_points = {
         'ninfo.plugin': [
